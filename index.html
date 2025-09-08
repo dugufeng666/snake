@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古韵蛇影 - 中国古风贪吃蛇</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="mountains"></div>
+        <div class="clouds cloud1"></div>
+        <div class="clouds cloud2"></div>
+        <div class="clouds cloud3"></div>
+    </div>
+    
+    <div class="container">
+        <header class="game-header">
+            <h1 class="game-title">古韵蛇影</h1>
+            <p class="game-subtitle">Ancient Snake Legend</p>
+        </header>
+        
+        <div class="game-info">
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="label">当前得分:</span>
+                    <span id="current-score">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">最高得分:</span>
+                    <span id="high-score">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">等级:</span>
+                    <span id="level">1</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-container">
+            <canvas id="gameCanvas" width="600" height="600"></canvas>
+            <div class="game-overlay" id="gameOverlay">
+                <div class="overlay-content">
+                    <h2 id="overlayTitle">古韵蛇影</h2>
+                    <p id="overlayMessage">按空格键开始游戏</p>
+                    <div class="controls-info">
+                        <p>🐍 使用方向键控制蛇的移动</p>
+                        <p>🍎 吃到仙果获得分数</p>
+                        <p>💎 特殊道具带来惊喜</p>
+                        <p>🌟 随着等级提升速度加快</p>
+                    </div>
+                    <button id="startButton" class="ancient-button">开始游戏</button>
+                    <button id="pauseButton" class="ancient-button" style="display:none;">暂停游戏</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="power-ups">
+            <h3>道具说明</h3>
+            <div class="power-up-list">
+                <div class="power-up-item">
+                    <span class="power-up-icon">🍎</span>
+                    <span>仙果 - 增长身体获得分数</span>
+                </div>
+                <div class="power-up-item">
+                    <span class="power-up-icon">💎</span>
+                    <span>宝石 - 额外分数奖励</span>
+                </div>
+                <div class="power-up-item">
+                    <span class="power-up-icon">⚡</span>
+                    <span>闪电 - 临时加速</span>
+                </div>
+                <div class="power-up-item">
+                    <span class="power-up-icon">🛡️</span>
+                    <span>护盾 - 一次撞墙保护</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="game-footer">
+        <p>© 2024 古韵蛇影 - 传承经典，创新体验</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
